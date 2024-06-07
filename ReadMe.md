@@ -1,23 +1,15 @@
 # Maize Yield Prediction Project
+
 **Overview**
+
 This project aims to predict the yield of maize in Germany for future years using historical data on area harvested, production, precipitation, temperature, sun duration, and summer days. The project follows the data science and machine learning lifecycle, from data collection and cleaning to model training and evaluation.
 
-**Table of Contents**
-1. Project Description
-2. Data
-3. Data Cleaning
-4. Exploratory Data Analysis
-5. Modeling and Evaluation
-6. Future Predictions
-7. Usage
-8. Requirements
-9. Installation
-10. Contributing
+**Project Description**
 
-1. **Project Description**
 The goal of this project is to develop and compare machine learning models for predicting maize yield in Germany. The models used include Linear Regression and Random Forest Regression. The performance of these models is evaluated using various metrics such as RMSE, MSE, and R-squared.
 
-2. **Data**
+**Data**
+
 The dataset includes maize data from 1961 to 2021 from FAOSTAT and climate data from DWD which was cleaned leaving the following features:
 
 + Year
@@ -29,10 +21,12 @@ The dataset includes maize data from 1961 to 2021 from FAOSTAT and climate data 
 + Sun duration (sun_d)
 + Summer days (sum_dys)
 
-3. **Data Cleaning**
+**Data Cleaning**
+
 Data cleaning involved removing unnecessary columns, converting data types, pivoting from longer to wider format, merging the various datasets and ensuring consistency in the dataset. Visualizations and statistical analyses were performed to understand the data better.
 
-4. **Exploratory Data Analysis**
+**Exploratory Data Analysis**
+
 Several visualizations were created to explore the data, including:
 
 + Time series plots of features
@@ -41,7 +35,8 @@ Several visualizations were created to explore the data, including:
 + Line graph of the features
 + Box plot of the features
 
-5. **Modeling and Evaluation**
+**Modeling and Evaluation**
+
 Two models were trained and evaluated:
 
 + Linear Regression
@@ -64,20 +59,25 @@ Two models were trained and evaluated:
 + Test R2: 0.937
 
 **Comparison Plot**
-Linear Regression
-![View Graph](https://github.com/Som-diba/Maize_Yield_Prediction/blob/web/Linear_Regression.png)
 
-Random Forest
-![View Graph](https://github.com/Som-diba/Maize_Yield_Prediction/blob/web/Random_Forest.png)
+*Linear Regression*
+![View Graph](https://github.com/Som-diba/Maize_Yield_Prediction/blob/main/Linear_Regression.png)
 
-6. **Future Predictions**
+
+*Random Forest*
+![View Graph](https://github.com/Som-diba/Maize_Yield_Prediction/blob/main/Random_Forest.png)
+
+**Future Predictions**
+
 Predictions were made for future years using both models. These predictions can help in decision-making, risk assessment, financial planning, and more.
 
-7. **Usage**
+**Usage**
+
 Prepare feature values for future dates.
 Use the trained models to predict the yield.
 
-8. **Requirements**
+**Requirements**
+
 Python 3.7+
 
 Libraries:
@@ -87,12 +87,18 @@ Libraries:
 + matplotlib
 + seaborn
 
-9. **Installation**
+**Installation**
+
 Clone the repository:
 
 https://github.com/Som-diba/Maize_Yield_Prediction.git
 
-10. **Contributing**
+**Contributing**
+
 Contributions are welcome!
+
+**License**
+
+This project is licensed under the MIT License!
 
 By following these steps above, you should be able to replicate the analysis, visualize the results, and make predictions for future maize yields using both Linear Regression and Random Forest models.
